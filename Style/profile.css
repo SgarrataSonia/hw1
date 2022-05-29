@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    background-image: url(../Images/SfondoProfile.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.credentials {
+    width: 100%;
+    max-width: 500px;
+    height: 80%;
+    background-color: beige;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.error {
+    color:brown;
+}
+
+.mod button {
+    margin: 8px;
+    padding: 5px;
+}
+
+.confirm_button {
+    margin: 5px;
+    padding: 3px;
+}
+
+.buttonContainer {
+    padding-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#backHome {
+    background-color: darkcyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px;
+    border-style: double;
+    border-color: black;
+    border-radius: 2px;
+    padding: 6px;
+}
+
+#backHome:hover {
+    background-color: white;
+    color: darkcyan;
+    border-color: black;
+}
+
+@media (max-width: 500px) {
+    body {
+        height: 90%;
+    }
+
+    .credentials {
+        width: 65%;
+        height: 60%;
+        padding: 15px;
+    }
+
+    #backHome:active {
+        background-color: white;
+        color: darkcyan;
+        border-color: black;
+    }  
+}

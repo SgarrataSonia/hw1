@@ -1,0 +1,86 @@
+body {
+    background: url(../Images/SfondoLogin.png) center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+}
+
+.loginUtente, .registraUtente {
+    background-color: darkcyan;
+    border-radius: 20%;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    margin: auto;
+    padding: 40px;
+}
+
+.form_login, .form_registra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.names {
+    display: flex;
+}
+
+.nome, .cognome {
+    padding: 2px;
+}
+
+.names, .username, .email, .password, .conferma_psw {
+    padding: 5px;
+}
+
+input:focus {
+    border: 2px solid red;          
+  }
+
+#dimMax {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    color: white;
+}
+
+.error {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+}
+
+#submit {
+    margin: 20px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: white;
+    background-color: blue;
+    font-weight: bolder;
+}
+
+a {
+    color: yellow;
+    font-weight: bolder;
+}
+
+a:active {
+    color: red;
+}
+
+
+@media (max-width: 500px) {
+    .loginUtente, .registraUtente {
+        padding: 20px;
+    }
+}

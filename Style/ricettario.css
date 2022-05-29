@@ -1,0 +1,167 @@
+body {
+    margin: 20px;
+    border: 10px darkcyan dotted;
+}
+
+#preferiti {
+    margin: 15px;
+}
+
+section {
+    margin: 40px;
+}
+
+#backHome {
+    background-color: darkcyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px;
+    border-style: double;
+    border-color: black;
+    border-radius: 2px;
+    margin: 28px;
+    padding: 6px;
+}
+
+#backHome:hover {
+    background-color: white;
+    color: darkcyan;
+    border-color: black;
+}
+
+.ricetta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    cursor: pointer;
+}
+
+.sx, .dx {
+    width: 50%;
+    margin: 15px;
+}
+
+.dx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+img {
+    height: 80%;
+    width: 45%;
+    margin: 20px;
+    padding-left: 29%;
+}
+
+.titolo {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: overline;
+}
+
+.nascosto {
+    display: none;
+}
+
+.button_rimuovi {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(245, 20, 46, 0.801);
+    color:white;
+    border: 2px black solid;
+    padding: 5px;
+}
+
+.button_rimuovi:hover {
+    background-color: white;
+    color: rgba(245, 20, 46, 0.801);
+    font-weight: bolder;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 3px palevioletred solid;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.img_song {
+    height: 60%;
+    width: 30%;
+}
+
+.song_title {
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-decoration: overline;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        margin: 7px;
+        border: 5px darkcyan dotted;
+    }
+
+    img {
+        height: 70%;
+        width: 90%;
+        margin: 40px 5px;
+        padding-left: 0px;
+    }
+
+    .sx {
+        width: 60%;
+    }
+
+    .dx {
+        width: 40%;
+    }
+
+    #backHome:active {
+        background-color: white;
+        color: darkcyan;
+        border-color: black;
+    }
+
+    .button_rimuovi:active {
+        background-color: white;
+        color: rgba(245, 20, 46, 0.801);
+        font-weight: bolder;
+    }
+
+    #search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #submit {
+        width: fit-content;
+        margin: 2px;
+    }
+
+    .img_song {
+      padding-left: 33%;
+    }
+    
+}
